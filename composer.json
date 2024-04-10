@@ -1,0 +1,49 @@
+{
+    "name": "oeuvres/teinte_dev",
+    "description": "Dev teinte code",
+    "type": "project",
+    "authors": [
+        {
+            "name": "Frédéric Glorieux",
+            "email": "frederic.glorieux@fictif.org",
+            "role": "Developer"
+        }
+    ],
+    "repositories": [
+        {
+            "type": "path",
+            "url": "../teinte_kit",
+            "options": {
+                "symlink": true,
+                "versions": {
+                    "oeuvres/kit": "dev-main"
+                }
+            }
+        },
+        {
+            "type": "path",
+            "url": "../teinte_php",
+            "options": {
+                "symlink": true,
+                "versions": {
+                    "oeuvres/teinte": "dev-main"
+                }
+            }
+        },
+        {
+            "type": "path",
+            "url": "../teinte_xsl",
+            "options": {
+                "symlink": true,
+                "versions": {
+                    "oeuvres/xsl": "dev-main"
+                }
+            }
+        }
+    ],
+    "require": {
+        "oeuvres/teinte": "dev-main"
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": false
+}
